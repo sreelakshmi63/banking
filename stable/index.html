@@ -10,17 +10,20 @@
 <script src="js/jquery.js"></script>
 <script src="js/jquery-migrate-1.1.1.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
-<script src="js/script.js"></script> 
+<script src="js/script.js"></script>
 <script src="js/superfish.js"></script>
 <script src="js/jquery.equalheights.js"></script>
 <script src="js/jquery.mobilemenu.js"></script>
 <script src="js/tmStickUp.js"></script>
 <script src="js/jquery.ui.totop.js"></script>
+<script src="js/countUp.js"></script>
+<script src="js/is_on_screen.js"></script>
+
 <script>
  $(window).load(function(){
   $().UItoTop({ easingType: 'easeOutQuart' });
-  $('#stuck_container').tmStickUp({});  
- }); 
+  $('#stuck_container').tmStickUp({});
+ });
 </script>
 <!--[if lt IE 8]>
  <div style=' clear: both; text-align:center; position: relative;'>
@@ -68,11 +71,11 @@
              </ul>
             </nav>
             <div class="clear"></div>
-          </div>       
-         <div class="clear"></div>  
+          </div>
+         <div class="clear"></div>
         </div>
-     </div> 
-    </div> 
+     </div>
+    </div>
   </section>
   <section class="page1_header">
     <div class="container">
@@ -103,17 +106,59 @@
   <div class="container">
     <div class="row">
       <div class="grid_3">
-        <div class="block-1_count">10</div>
+
+      <div class="block-1_count" id="counter_5714e56b1a880">
+        <script type="text/javascript">
+    		jQuery(document).ready(function($) {
+        var counter_5714e56b1a880 = new CountUp("counter_5714e56b1a880", 0, 10, 0, 2.5, {
+        useEasing : true,
+        useGrouping: false,
+        prefix : '',
+        suffix : ''
+      });
+      $(window).scroll(function(){
+        if( $("#counter_5714e56b1a880").is_on_screen() ){
+          counter_5714e56b1a880.start();
+        }
+      });
+    });</script></div>
         Years of <br> Experience
+
         <div class="clear"></div>
       </div>
       <div class="grid_3">
-        <div class="block-1_count">30</div>
+        <div class="block-1_count" id="counter_5714e56b1a881"><script type="text/javascript">
+    		jQuery(document).ready(function($) {
+        var counter_5714e56b1a880 = new CountUp("counter_5714e56b1a881", 0, 30, 0, 2.5, {
+        useEasing : true,
+        useGrouping: false,
+        prefix : '',
+        suffix : ''
+      });
+      $(window).scroll(function(){
+        if( $("#counter_5714e56b1a880").is_on_screen() ){
+          counter_5714e56b1a880.start();
+        }
+      });
+    });</script></div>
         Successful <br> Projects
         <div class="clear"></div>
       </div>
       <div class="grid_3">
-        <div class="block-1_count">20</div>
+        <div class="block-1_count" id="counter_5714e56b1a882"><script type="text/javascript">
+    		jQuery(document).ready(function($) {
+        var counter_5714e56b1a880 = new CountUp("counter_5714e56b1a882", 0, 20, 0, 2.5, {
+        useEasing : true,
+        useGrouping: false,
+        prefix : '',
+        suffix : ''
+      });
+      $(window).scroll(function(){
+        if( $("#counter_5714e56b1a880").is_on_screen() ){
+          counter_5714e56b1a880.start();
+        }
+      });
+    });</script></div>
         Partner <br> Projects
         <div class="clear"></div>
       </div>
@@ -135,7 +180,7 @@
             Welcome
           </h2>
           <p>Read more about the <a href=" http://blog.templatemonster.com/free-website-templates/" rel="nofollow" class="color1">freebie</a> here. <br> Go to TemplateMonster.com and find more <a href="http://www.templatemonster.com/properties/topic/business-services/" rel="nofollow" class="color1">goodies</a> of this kind </p>
-          Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet site amet est vel, commodo venenatis eros. Fusce adipiscing quam id risus sagittis, non consequat lacus interdum. nulla, eu sodales arcu. Quisque viverra nulla nunc, eu ultrices libero ultricies eget. Phasellus accumsan 
+          Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet site amet est vel, commodo venenatis eros. Fusce adipiscing quam id risus sagittis, non consequat lacus interdum. nulla, eu sodales arcu. Quisque viverra nulla nunc, eu ultrices libero ultricies eget. Phasellus accumsan
         </div>
       </div>
     </div>
@@ -185,7 +230,7 @@
         <img src="images/page1_img3.jpg" alt="" class="img_inner fleft">
           <p>Curabitur vel lorem sit amet nulla ullamcorper fermentum In vitae dert arius augue, eu consectetur </p>
           <p class="offset__1">Eligulaam dui eros dertolisce dertolo adipiscing quam id risus sagittis</p>
-          Curabitur vel lorem sit amet nulla ullamcorper fermentum In vitae dert rius augue, eu consectetur larem dui eros dertolisce dertolo 
+          Curabitur vel lorem sit amet nulla ullamcorper fermentum In vitae dert rius augue, eu consectetur larem dui eros dertolisce dertolo
       </div>
       <div class="grid_4">
         <h4>Solutions</h4>
@@ -218,13 +263,13 @@
 <footer id="footer">
   <div class="container">
     <div class="row">
-      <div class="grid_12"> 
+      <div class="grid_12">
         <div class="copyright"><span class="brand">Stable</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
           <div class="sub-copy">Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </footer>
 <a href="#" id="toTop" class="fa fa-chevron-up"></a>
 </body>
