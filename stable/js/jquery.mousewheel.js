@@ -161,9 +161,9 @@
         // Adjust older deltas if necessary
         if ( shouldAdjustOldDeltas(orgEvent, absDelta) ) {
             // Divide all the things by 40!
-            delta  /= 40;
-            deltaX /= 40;
-            deltaY /= 40;
+            delta  /= 10;
+            deltaX /= 10;
+            deltaY /= 10;
         }
 
         // Get a whole, normalized value for the deltas
@@ -197,7 +197,7 @@
         // a different lowestDelta
         // Ex: trackpad = 3 and mouse wheel = 120
         if (nullLowestDeltaTimeout) { clearTimeout(nullLowestDeltaTimeout); }
-        nullLowestDeltaTimeout = setTimeout(nullLowestDelta, 200);
+        nullLowestDeltaTimeout = setTimeout(nullLowestDelta, 100);
 
         return ($.event.dispatch || $.event.handle).apply(this, args);
     }
