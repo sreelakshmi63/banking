@@ -471,6 +471,36 @@ header h1.stuck_head {
 #content .content_gray.offset__2 h3 {
   margin-bottom: 12px;
 }
+
+
+
+
+.round {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 210px;
+                height: 210px;
+            }
+            .round img {
+                display: inline-block;
+            /* Stretch 
+                  height: 100%;
+                  width: 100%; */
+            min-width: 100%;
+            min-height: 100%;
+		
+            }
+    .img-circle {
+        border-radius: 50%;
+    }
+
+
+
+
+
+
+
+
 /****Non suppage set****/
 .page1 header {
   border-bottom: 1px solid #fff;
@@ -586,7 +616,7 @@ header h1.stuck_head {
   width: 68px;
   height: 68px;
   display: block;
-  text-align: center;
+ c
   font: 300 36px/67px 'Roboto Condensed', sans-serif;
   border-radius: 500px;
   margin-bottom: 10px;
@@ -641,6 +671,11 @@ header h1.stuck_head {
   font-size: 18px;
   line-height: 20px;
   display: block;
+}
+.text4 {
+  font: 24px/20px 'Roboto Condensed', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .color1 {
   color: #00b1ba;
@@ -736,6 +771,23 @@ a.color1:hover {
 #toTop:hover {
   outline: none;
   color: #00b1ba;
+}
+
+.centered {
+  position: absolute;
+  
+  /* bring your own prefixes */
+  
+}
+.parent {
+    display: flex;
+    height: 300px; /* Or whatever */
+}
+
+.child {
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
 }
 /*==================================RESPONSIVE LAYOUTS===============================================*/
 @media only screen and (max-width: 1199px) {
